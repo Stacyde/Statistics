@@ -42,7 +42,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int minAverageSumSales(long[] sales) {
+    public int countMinAverageSumSales(long[] sales) {
         int month = 0;
         for (long sale : sales) {
             if (sale < averageSumSales(sales)) {
@@ -51,7 +51,7 @@ public class StatsService {
         }
         return month;
     }
-    public int maxAverageSumSales(long[] sales) {
+    public int countMaxAverageSumSales(long[] sales) {
         int month = 0;
         for (long sale : sales) {
             if (sale > averageSumSales(sales)) {
