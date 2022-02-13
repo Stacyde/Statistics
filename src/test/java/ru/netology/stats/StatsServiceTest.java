@@ -56,24 +56,24 @@ class StatsServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void minAverageSumSales() {
+    void countMinAverageSumSales() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
 
-        long actual = service.minAverageSumSales(sales);
+        long actual = service.countMinAverageSumSales(sales);
 
         assertEquals(expected, actual);
     }
     @Test
-    void maxAverageSumSales() {
+    void countMaxAverageSumSales() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expected = 5;
 
-        long actual = service.maxAverageSumSales(sales);
+        long actual = service.countMaxAverageSumSales(sales);
 
         assertEquals(expected, actual);
     }
